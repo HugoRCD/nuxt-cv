@@ -1,10 +1,10 @@
-# default-repository
+# nuxt-cv
 
 <!-- automd:badges color=black license provider=shields -->
 
-[![npm version](https://img.shields.io/npm/v/default-repository?color=black)](https://npmjs.com/package/default-repository)
-[![npm downloads](https://img.shields.io/npm/dm/default-repository?color=black)](https://npmjs.com/package/default-repository)
-[![license](https://img.shields.io/github/license/HugoRCD/default-repository?color=black)](https://github.com/HugoRCD/default-repository/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/nuxt-cv?color=black)](https://npmjs.com/package/nuxt-cv)
+[![npm downloads](https://img.shields.io/npm/dm/nuxt-cv?color=black)](https://npmjs.com/package/nuxt-cv)
+[![license](https://img.shields.io/github/license/HugoRCD/nuxt-cv?color=black)](https://github.com/HugoRCD/nuxt-cv/blob/main/LICENSE)
 
 <!-- /automd -->
 
@@ -18,26 +18,26 @@ Install package:
 
 ```sh
 # ✨ Auto-detect
-npx nypm install default-repository
+npx nypm install nuxt-cv
 
 # npm
-npm install default-repository
+npm install nuxt-cv
 
 # yarn
-yarn add default-repository
+yarn add nuxt-cv
 
 # pnpm
-pnpm install default-repository
+pnpm install nuxt-cv
 
 # bun
-bun install default-repository
+bun install nuxt-cv
 ```
 
 <!-- /automd -->
 
 ## Development
 
-Before you start, you can use the `./scripts/rename.sh` script to rename all `default-repository` occurrences in the repository to your new repository name.
+Before you start, you can use the `./scripts/rename.sh` script to rename all `nuxt-cv` occurrences in the repository to your new repository name.
 
 <!-- automd:fetch url="gh:hugorcd/markdown/main/src/local_development.md" -->
 
@@ -75,11 +75,11 @@ To start contributing, you can follow these steps:
 
 <!-- automd:contributors license=Apache author=HugoRCD-->
 
-Published under the [APACHE](https://github.com/HugoRCD/default-repository/blob/main/LICENSE) license.
-Made by [@HugoRCD](https://github.com/HugoRCD) and [community](https://github.com/HugoRCD/default-repository/graphs/contributors) 💛
+Published under the [APACHE](https://github.com/HugoRCD/nuxt-cv/blob/main/LICENSE) license.
+Made by [@HugoRCD](https://github.com/HugoRCD) and [community](https://github.com/HugoRCD/nuxt-cv/graphs/contributors) 💛
 <br><br>
-<a href="https://github.com/HugoRCD/default-repository/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=HugoRCD/default-repository" />
+<a href="https://github.com/HugoRCD/nuxt-cv/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=HugoRCD/nuxt-cv" />
 </a>
 
 <!-- /automd -->
