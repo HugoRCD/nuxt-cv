@@ -12,5 +12,9 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxthq/studio'
-  ]
+  ],
+
+  studio: {
+    enabled: true
+  }
 })
