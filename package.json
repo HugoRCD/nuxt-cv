@@ -1,0 +1,34 @@
+{
+  "name": "default-repository",
+  "private": true,
+  "type": "module",
+  "description": "default repository for HugoRCD",
+  "author": "HugoRCD",
+  "funding": "https://github.com/sponsors/HugoRCD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoRCD/default-repository.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HugoRCD/default-repository/issues"
+  },
+  "scripts": {
+    "automd": "automd",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "release": "bun run lint && changelogen --release --push"
+  },
+  "devDependencies": {
+    "@hrcd/eslint-config": "^2.1.1-edge",
+    "automd": "^0.3.12",
+    "changelogen": "^0.5.7",
+    "eslint": "^9.12.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
