@@ -2,7 +2,7 @@
   "name": "nuxt-cv",
   "private": true,
   "type": "module",
-  "description": "default repository for HugoRCD",
+  "description": "Nuxt CV is a clean, printable cv for developers built with Nuxt.",
   "author": "HugoRCD",
   "funding": "https://github.com/sponsors/HugoRCD",
   "repository": {
@@ -13,21 +13,29 @@
     "url": "https://github.com/HugoRCD/nuxt-cv/issues"
   },
   "scripts": {
-    "automd": "automd",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "release": "bun run lint && changelogen --release --push"
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@mockline/utils": "^1.5.2",
+    "@nuxt/content": "^2.13.4",
+    "@nuxt/image": "^1.8.1",
+    "@nuxt/scripts": "^0.9.5",
+    "@nuxthq/studio": "^2.1.1",
+    "nuxt": "^3.13.2",
+    "vue": "latest",
+    "vue-router": "latest"
   },
   "devDependencies": {
-    "@hrcd/eslint-config": "^2.1.1-edge",
+    "@hrcd/eslint-config": "edge",
     "automd": "^0.3.12",
     "changelogen": "^0.5.7",
     "eslint": "^9.12.0",
     "typescript": "^5.6.3"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
