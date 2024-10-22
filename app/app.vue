@@ -6,6 +6,8 @@ useScriptPlausibleAnalytics({
   }
 })
 
+const { seo } = useAppConfig()
+
 useHead({
   link: [
     {
@@ -41,6 +43,7 @@ useHead({
 <template>
   <div>
     Hello world
+    {{ seo.title }}
   </div>
 </template>
 
