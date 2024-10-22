@@ -1,3 +1,5 @@
+![og-preview.png](public/og-preview.png)
+
 # Nuxt CV
 
 Simple web app that renders minimalist CV with print-friendly layout.
@@ -7,6 +9,11 @@ Built with Nuxt and TailwindCSS v4.
 ## Live website
 
 You can see it live at [cv.hrcd.fr](https://cv.hrcd.fr/).
+
+# Features
+
+- Fully integrated with [Nuxt Content](https://content.nuxt.com/), to be easily customizable
+- Easy to customize
 
 ## Quick Setup
 
@@ -34,6 +41,18 @@ bun generate
 ```bash
 bun start
 ```
+
+## How to modify the CV Content
+
+This portfolio uses [Nuxt Content](https://content.nuxt.com/) to manage the content. Here's how you can modify it:
+
+First check the `app.config.ts` file to change the global configuration of the portfolio, there is a lot of stuff you can change here.
+
+### Works
+
+1. Navigate to the `content/works/` directory.
+2. Here, you'll find JSON files for each project. To modify an project, simply open its JSON file and make your changes.
+3. To add a new project, add a new JSON file in this directory.
 
 <!-- automd:fetch url="gh:hugorcd/markdown/main/src/contributions.md" -->
 
