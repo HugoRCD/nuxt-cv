@@ -14,6 +14,9 @@ You can see it live at [cv.hrcd.fr](https://cv.hrcd.fr/).
 
 - Fully integrated with [Nuxt Content](https://content.nuxt.com/), to be easily customizable
 - Easy to customize
+- Print-friendly layout
+
+<img src="public/nuxt-studio.png" width="800" alt="Nuxt Studio"/>
 
 ## Quick Setup
 
