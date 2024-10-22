@@ -3,21 +3,21 @@ const { profile } = useAppConfig()
 </script>
 
 <template>
-  <div class="flex flex-row print:flex-col gap-3 mt-2">
+  <div class="flex flex-row print:flex-col gap-3 print:gap-2 mt-2">
     <NuxtLink :to="profile.website" class="link link_space">
-      <MIcon name="lucide:link" size="22" />
+      <MIcon name="lucide:link" class="size-5 print:size-4" />
       <span class="link-text">
         {{ profile.website }}
       </span>
     </NuxtLink>
     <NuxtLink :to="`mailto:${profile.email}`" class="link link_space">
-      <MIcon name="lucide:mail" size="22" />
+      <MIcon name="lucide:mail" class="size-5 print:size-4" />
       <span class="link-text">
         {{ profile.email }}
       </span>
     </NuxtLink>
     <NuxtLink :to="`tel:${profile.phone}`" class="link link_space">
-      <MIcon name="lucide:phone" size="22" />
+      <MIcon name="lucide:phone" class="size-5 print:size-4" />
       <span class="link-text">
         {{ profile.phone }}
       </span>
@@ -43,6 +43,7 @@ const { profile } = useAppConfig()
 @media print {
   .link-text {
     display: inline;
+    @apply text-sm;
   }
 
   .print\:flex-col {

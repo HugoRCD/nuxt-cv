@@ -10,7 +10,7 @@ export default defineAppConfig({
     picture: 'https://avatars.githubusercontent.com/u/71938701?v=4'
   },
   seo: {
-    title: 'Hugo Richard | Developer and Designer',
+    title: 'Hugo Richard | Front-end Developer and Designer',
     description: 'Hugo Richard, french developer and designer based in Nice.',
     url: 'https://cv.hrcd.fr',
     image: 'https://cv.hrcd.fr/social-preview.jpg'
