@@ -1,7 +1,14 @@
 export default defineAppConfig({
-  description: 'Hugo Richard, french developer and designer based in Nice.',
-  email: 'contact@hrcd.fr',
-  phone: '(+33) 6 21 56 22 18',
+  profile: {
+    name: 'Hugo Richard',
+    job: 'Front-end developer and designer',
+    location: 'Nice, France',
+    description: 'French developer based in Nice. Working mainly with Nuxt and Vue.',
+    email: 'contact@hrcd.fr',
+    phone: '(+33) 6 21 56 22 18',
+    website: 'https://hrcd.fr',
+    picture: 'https://avatars.githubusercontent.com/u/71938701?v=4'
+  },
   seo: {
     title: 'Hugo Richard | Developer and Designer',
     description: 'Hugo Richard, french developer and designer based in Nice.',

@@ -8,7 +8,26 @@ useScriptPlausibleAnalytics({
 
 const { seo } = useAppConfig()
 
+useSeoMeta({
+  title: seo.title,
+  description: seo.description,
+  url: seo.url,
+  image: seo.image,
+  twitterTitle: seo.title,
+  twitterDescription: seo.description,
+  twitterUrl: seo.url,
+  twitterImage: seo.image,
+  twitterCard: 'summary_large_image',
+  ogType: 'website',
+  ogSiteName: seo.title,
+  ogTitle: seo.title,
+  ogDescription: seo.description,
+  ogUrl: seo.url,
+  ogImage: seo.image,
+})
+
 useHead({
+  title: seo.title,
   link: [
     {
       rel: 'icon',
@@ -41,10 +60,11 @@ useHead({
 </script>
 
 <template>
-  <div>
-    Hello world
-    {{ seo.title }}
-  </div>
+  <Html :lang="seo.lang">
+    <MApp>
+      <Hero />
+    </MApp>
+  </Html>
 </template>
 
 <style>
