@@ -27,16 +27,13 @@ const { data: works } = await useAsyncData('works', () =>
         v-for="(work, index) in works"
         :key="work.name"
         :to="work.link"
-        class="group relative"
+        class="group border border-neutral-300 rounded-md p-4 flex flex-col gap-2 hover:border-accent"
         data-animate
         :aria-label="`Open ${work.name}`"
         :style="{ '--stagger': index }"
       >
-        <div class="absolute right-0 top-0 font-newsreader text-5xl italic opacity-[9%] sm:text-3xl">
-          {{ work.release }}
-        </div>
-        <h3 class="text-2xl italic decoration-accent group-hover:underline">
-          {{ work.name }}<span class="text-accent">.</span>
+        <h3 class="text-lg group-hover:underline">
+          {{ work.name }}
         </h3>
         <p>
           {{ work.description }}
