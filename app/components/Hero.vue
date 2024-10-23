@@ -24,7 +24,7 @@ function print() {
       </div>
       <NuxtImg v-if="profile.picture" :src="profile.picture" :alt="profile.name" class="rounded-md size-32 sm:size-40" />
     </div>
-    <div class="mt-2 print:hidden flex justify-end gap-2">
+    <div class="mt-2 print:hidden">
       <button class="bg-neutral-900 cursor-pointer text-white rounded-md px-4 py-1 text-sm hover:bg-neutral-700 flex items-center gap-1" @click="print()">
         Print
         <MIcon name="lucide:printer" class="size-5" />
