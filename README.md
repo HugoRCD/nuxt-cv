@@ -1,4 +1,4 @@
-![og-preview.png](public/og-preview.png)
+![og-preview.png](public/og.png)
 
 # Nuxt CV
 
