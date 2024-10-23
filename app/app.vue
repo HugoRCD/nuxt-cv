@@ -66,10 +66,11 @@ const { data: page } = await useAsyncData(`${route.path}`, () => queryContent(ro
 
 <template>
   <Html :lang="seo.lang">
-    <MApp class="px-4 sm:px-0 py-10 sm:py-16 max-w-2xl mx-auto flex flex-col gap-8">
+    <MApp class="px-4 sm:px-0 py-10 sm:py-16 max-w-2xl mx-auto flex flex-col gap-10">
       <Hero />
       <ContentRenderer v-if="page?.body" :value="page" />
       <Works />
+      <Education />
     </MApp>
   </Html>
 </template>

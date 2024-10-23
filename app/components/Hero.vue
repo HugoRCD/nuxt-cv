@@ -17,10 +17,7 @@ const { profile } = useAppConfig()
       </p>
       <Socials />
     </div>
-    <NuxtImg v-if="profile.picture" :src="profile.picture" :alt="profile.name" class="rounded-md size-32 sm:size-36" />
+    <NuxtImg v-if="profile.picture" :src="profile.picture" :alt="profile.name" class="rounded-md size-32 sm:size-40" />
   </div>
 </template>
 
-<style scoped>
-
-</style>

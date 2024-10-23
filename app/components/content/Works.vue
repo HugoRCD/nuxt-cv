@@ -1,12 +1,12 @@
 <script setup lang="ts">
 type Work = {
   name: string;
-  logo: string;
+  position: string;
+  release: string | 'Soon';
+  link: string;
   image: string;
-  description: string;
-  link: string | 'Soon';
-  tags: string[];
-  release: string;
+  description: string | null;
+  date: string;
 };
 
 const { data: works } = await useAsyncData('works', () =>
@@ -14,28 +14,36 @@ const { data: works } = await useAsyncData('works', () =>
     .where({ _type: 'json' })
     .sort({ date: -1 })
     .find()
-)
+) as { data: Work[] }
 </script>
 
 <template>
-  <div class="mt-10">
+  <div>
     <h3 class="text-xl font-semibold mb-2">
-      Works
+      Work experience
     </h3>
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+    <div class="flex flex-col gap-4">
       <NuxtLink
         v-for="(work, index) in works"
         :key="work.name"
         :to="work.link"
-        class="group border border-neutral-300 rounded-md p-4 flex flex-col gap-2 hover:border-accent"
+        class="group flex flex-col"
         data-animate
         :aria-label="`Open ${work.name}`"
         :style="{ '--stagger': index }"
       >
-        <h3 class="text-lg group-hover:underline">
-          {{ work.name }}
-        </h3>
-        <p>
+        <div class="flex justify-between items-center">
+          <h3 class="text-lg group-hover:underline text-neutral-800 font-semibold">
+            {{ work.name }}
+          </h3>
+          <p v-if="work.date" class="text-neutral-500 text-sm">
+            {{ work.date }}
+          </p>
+        </div>
+        <p v-if="work.position" class="text-neutral-500 text-sm font-medium">
+          {{ work.position }}
+        </p>
+        <p v-if="work.description" class="text-neutral-500 text-sm mt-1">
           {{ work.description }}
         </p>
       </NuxtLink>

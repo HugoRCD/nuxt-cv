@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="flex flex-col mt-6">
+  <div class="flex flex-col">
     <h3 class="text-xl font-semibold mb-2">
       About
     </h3>
