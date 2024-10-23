@@ -1,42 +1,42 @@
 <script setup lang="ts">
-type Education = {
+type Experience = {
   name: string;
   date: string;
   description: string;
 }
 
-const { data: education } = await useAsyncData('education', () =>
-  queryContent('education')
+const { data: experiences } = await useAsyncData('experiences', () =>
+  queryContent('experiences')
     .where({ _type: 'json' })
     .sort({ date: -1 })
     .find()
-) as { data: Education[] }
+) as { data: Experience[] }
 </script>
 
 <template>
-  <div v-if="education.length > 0">
+  <div v-if="experiences.length > 0">
     <h3 class="text-xl font-semibold mb-2">
-      Education
+      Work Experience
     </h3>
     <div class="flex flex-col gap-4">
       <div
-        v-for="(edu, index) in education"
-        :key="edu.name"
+        v-for="(exp, index) in experiences"
+        :key="exp.name"
         class="flex flex-col"
         data-animate
-        :aria-label="`Open ${edu.name}`"
+        :aria-label="`Open ${exp.name}`"
         :style="{ '--stagger': index }"
       >
         <div class="flex justify-between items-center">
           <h3 class="text-md text-neutral-800 font-semibold">
-            {{ edu.name }}
+            {{ exp.name }}
           </h3>
-          <p v-if="edu.date" class="text-neutral-500 text-sm">
-            {{ edu.date }}
+          <p v-if="exp.date" class="text-neutral-500 text-sm">
+            {{ exp.date }}
           </p>
         </div>
-        <p v-if="edu.description" class="text-neutral-500 text-sm mt-1">
-          {{ edu.description }}
+        <p v-if="exp.description" class="text-neutral-500 text-sm mt-1">
+          {{ exp.description }}
         </p>
       </div>
     </div>

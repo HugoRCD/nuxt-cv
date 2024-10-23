@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Works from '~/components/content/Works.vue'
-
 useScriptPlausibleAnalytics({
   domain: 'cv.hrcd.fr',
   scriptInput: {
@@ -69,8 +67,9 @@ const { data: page } = await useAsyncData(`${route.path}`, () => queryContent(ro
     <MApp class="px-4 sm:px-0 py-10 sm:py-16 max-w-2xl mx-auto flex flex-col gap-10">
       <Hero />
       <ContentRenderer v-if="page?.body" :value="page" />
-      <Works />
+      <Experiences />
       <Education />
+      <Projects />
     </MApp>
   </Html>
 </template>
