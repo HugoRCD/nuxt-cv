@@ -13,7 +13,8 @@ export default defineAppConfig({
     title: 'Hugo Richard | Front-end Developer and Designer',
     description: 'Hugo Richard, french developer and designer based in Nice.',
     url: 'https://cv.hrcd.fr',
-    image: 'https://cv.hrcd.fr/og-preview.png'
+    image: 'https://cv.hrcd.fr/og.png',
+    lang: 'en'
   },
   socials: {
     github: 'https://github.com/HugoRCD',
