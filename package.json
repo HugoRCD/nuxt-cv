@@ -35,7 +35,7 @@
   "devDependencies": {
     "@hrcd/eslint-config": "edge",
     "automd": "^0.4.0",
-    "changelogen": "^0.6.0",
+    "changelogen": "^0.6.1",
     "eslint": "^9.21.0",
     "typescript": "^5.8.2"
   }
