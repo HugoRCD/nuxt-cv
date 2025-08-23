@@ -26,7 +26,7 @@
     "@mockline/utils": "^1.5.2",
     "@nuxt/content": "^2.13.4",
     "@nuxt/image": "^1.11.0",
-    "@nuxt/scripts": "^0.11.10",
+    "@nuxt/scripts": "^0.11.13",
     "@nuxthq/studio": "^2.2.1",
     "nuxt": "^3.18.1",
     "vue": "latest",
@@ -36,7 +36,7 @@
     "@hrcd/eslint-config": "edge",
     "automd": "^0.4.0",
     "changelogen": "^0.6.2",
-    "eslint": "^9.33.0",
+    "eslint": "^9.34.0",
     "typescript": "^5.9.2"
   }
 }
