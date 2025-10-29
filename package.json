@@ -28,7 +28,7 @@
     "@nuxt/image": "^1.11.0",
     "@nuxt/scripts": "^0.13.0",
     "@nuxthq/studio": "^2.2.1",
-    "nuxt": "^3.19.3",
+    "nuxt": "^3.20.0",
     "vue": "latest",
     "vue-router": "latest"
   },
